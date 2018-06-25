@@ -13,25 +13,21 @@ namespace Sweepstakes
 			SweepstakesQueueManager queueManager = new SweepstakesQueueManager();
 			SweepstakesStackManager stackManager = new SweepstakesStackManager();
 
-			// Create sweapstakes and contestants
 			Sweepstakes sweepstakes = new Sweepstakes("Noah's Ark Giveaway");
 			CreateDefaultContestants(sweepstakes);
 
-			// Add sweapstakes to both managers
 			queueManager.InsertSweepstakes(sweepstakes);
 			stackManager.InsertSweepstakes(sweepstakes);
 
 			sweepstakes = new Sweepstakes("Crazy Bob's Fireworks Giveaway");
 			CreateDefaultContestants(sweepstakes);
 
-			// Add sweapstakes to both managers
 			queueManager.InsertSweepstakes(sweepstakes);
 			stackManager.InsertSweepstakes(sweepstakes);
 
 			sweepstakes = new Sweepstakes("Library Donation Giveaway");
 			CreateDefaultContestants(sweepstakes);
 
-			// Add sweapstakes to both managers
 			queueManager.InsertSweepstakes(sweepstakes);
 			stackManager.InsertSweepstakes(sweepstakes);
 
